@@ -4,19 +4,6 @@ int partition(int *array, int start, int end, int size);
 void quickSort(int *array, int start, int end, int size);
 
 /**
- * quick_sort - quick sorts an array
- * @array: array to sort
- * @size: size of array
- */
-
-void quick_sort(int *array, size_t size)
-{
-	if (array == NULL || size < 2)
-		return;
-	quickSort(array, 0, size - 1, size);
-}
-
-/**
  * partition - partitions the array
  * @array: array to take in
  * @start: start of array;
@@ -73,4 +60,17 @@ void quickSort(int *array, int start, int end, int size)
 		printf("second recursive, pivot + 1 [%d] to end [%d]\n", pivot + 1, end);
 		quickSort(array, pivot + 1, end, size);
 	}
+}
+
+/**
+ * quick_sort - quick sorts an array
+ * @array: array to sort
+ * @size: size of array
+ */
+
+void quick_sort(int *array, size_t size)
+{
+	if (array == NULL || size < 2)
+		return;
+	quickSort(array, 0, size - 1, size);
 }
