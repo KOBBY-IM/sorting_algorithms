@@ -7,8 +7,7 @@
 void counting_sort(int *array, size_t size)
 {
 	size_t i;
-	int j, k, num, dup;
-	int *counts;
+	int j, k, num, dup, *counts;
 
 	if (array == NULL || size < 2)
 		return;
@@ -46,6 +45,5 @@ void counting_sort(int *array, size_t size)
 				array[i++] = (j + 1);
 		}
 	}
-
 	free(counts);
 }
