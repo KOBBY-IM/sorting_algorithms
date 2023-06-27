@@ -1,7 +1,7 @@
 #include "sort.h"
 
-void prints(int *arr, char *side, size_t start, size_t end)
-void rec_merge(int *array, int *sortArr, size_t l, size_t r)
+void prints(int *arr, char *side, size_t start, size_t end);
+void rec_merge(int *array, int *sortArr, size_t l, size_t r);
 
 /**
  * prints - prints left, right, and merged halves
